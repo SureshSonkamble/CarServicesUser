@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgg">
+    <include layout="@layout/toolbar_basic"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/pg"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:background="@drawable/edittextborder_new"
+            android:id="@+id/img_yojana"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="05dp"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:fontFamily="sans-serif"
+            android:src="@drawable/car"
+            android:textSize="16sp"/>
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/txt_call"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+               android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="0dp"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp">
+        <ImageView
+            android:layout_marginTop="0dp"
+            android:padding="02dp"
+            android:src="@drawable/phone"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+
+    </androidx.cardview.widget.CardView>
+        <TextView
+
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/txt_map"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            card_view:cardBackgroundColor="@color/colorPrimary"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <ImageView
+                android:layout_marginTop="0dp"
+                android:padding="02dp"
+                android:src="@drawable/map"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="View On Map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+        <View
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Service Center Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="#000000"
+           android:enabled="false"
+            android:inputType="number"
+            android:id="@+id/edt_yojana_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:hint="Service Center Name"
+            android:maxLength="4"
+            android:padding="15dp" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Service Center Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="#000000"
+           android:enabled="false"
+            android:id="@+id/edt_yojana_desc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_text_top"
+            android:hint="Service Center Address"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+           android:layout_gravity="center"
+            android:text="Service Center MObile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="#000000"
+           android:enabled="false"
+            android:inputType="number"
+            android:id="@+id/edt_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:hint="Service Center Mobile"
+            android:padding="15dp" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+           android:layout_gravity="center"
+            android:text="Service Center Open Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="#000000"
+           android:enabled="false"
+            android:id="@+id/edt_sector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:hint="Service Center Open Time"
+            android:padding="15dp" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+           android:layout_gravity="center"
+            android:text="Service Center Close Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="#000000"
+           android:enabled="false"
+            android:id="@+id/edt_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:hint="Service Center Close Time"
+            android:padding="15dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+           android:layout_gravity="center"
+            android:text="Service Center Off Day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="#000000"
+           android:enabled="false"
+            android:id="@+id/edt_launched_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:hint="Service Center Off Day"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
